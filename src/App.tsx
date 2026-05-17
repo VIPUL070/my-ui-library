@@ -1,9 +1,12 @@
-import Testimonial from "./components/Testimonial"
+// import Testimonial from "./components/Testimonial"
+import GeminiScrollEffect from "./components/GeminiScrollEffect"
 
 function App() {
   return (
    <>
-   <Testimonial /></>
+   {/* <Testimonial /> */}
+   <GeminiScrollEffect />
+   </>
   )
 }
 
