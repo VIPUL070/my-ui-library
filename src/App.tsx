@@ -1,7 +1,6 @@
-// import Testimonial from "./components/Testimonial"
-// import GeminiScrollEffect from "./components/GeminiScrollEffect"
-
-import FloatingDock from "./components/FloatingDock"
+// import Testimonial from "./components/Testimonial/Testimonial"
+// import GeminiScrollEffect from "./components/GeminiScroll/GeminiScrollEffect"
+import FloatingDock from "./components/FloatingDock/FloatingDock"
 
 function App() {
   return (

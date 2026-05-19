@@ -2,7 +2,8 @@
 import { useMotionValueEvent, useScroll } from "motion/react";
 import { motion, MotionValue, useTransform } from "framer-motion";
 import { useRef } from "react";
-import { cn } from "../lib/utils";
+import { cn } from "../../lib/utils";
+
 
 const GeminiScrollEffect = () => {
   const ref = useRef<HTMLDivElement>(null);

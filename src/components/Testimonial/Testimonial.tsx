@@ -1,8 +1,9 @@
 "use client";
 import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
-import LeftArrow from "../utils/LeftArrow";
-import RightArrow from "../utils/RightArrow";
+import LeftArrow from "../../utils/LeftArrow";
+import RightArrow from "../../utils/RightArrow";
+
 
 const testimonials = [
   {

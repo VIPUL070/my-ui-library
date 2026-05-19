@@ -1,4 +1,4 @@
-const LeftArrow = () => {
+const RightArrow = () => {
   return (
     <div>
       <svg
@@ -22,4 +22,4 @@ const LeftArrow = () => {
   );
 };
 
-export default LeftArrow;
+export default RightArrow;
