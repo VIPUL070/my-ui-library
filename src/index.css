@@ -1,1 +1,29 @@
-@import 'tailwindcss'
+@import 'tailwindcss';
+
+@theme {
+  --color-black: #0B0B0B;
+  --color-offwhite: #F9FAFB;
+
+  /* card colors */
+  --color-cardOrange: #e54f10 ;
+  --color-cardWhite: #f6ebd9 ;
+  --color-cardBlue: #0a90d2 ;
+  --color-cardGreen: #53f399 ;
+  --color-cardBlack: #211f1e ;
+
+  /* app fonts */
+  --font-onsite: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+}
+
+:root {
+  --font-onsite: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --size-font: 16px;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-onsite);
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  background-color: var(--color-black);
+}

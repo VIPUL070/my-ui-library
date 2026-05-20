@@ -1,8 +1,8 @@
 // import Testimonial from "./components/Testimonial/Testimonial"
 // import GeminiScrollEffect from "./components/GeminiScroll/GeminiScrollEffect"
 // import FloatingDock from "./components/FloatingDock/FloatingDock"
-
-import Scroll from "./components/Scroll/Scroll"
+// import Scroll from "./components/Scroll/Scroll"
+import InterfaceCard from "./components/InterfaceCard/InterfaceCard"
 
 function App() {
   return (
@@ -10,7 +10,8 @@ function App() {
    {/* <Testimonial /> */}
    {/* <GeminiScrollEffect /> */}
    {/* <FloatingDock /> */}
-   <Scroll />
+   {/* <Scroll /> */}
+   <InterfaceCard />
    </>
   )
 }
