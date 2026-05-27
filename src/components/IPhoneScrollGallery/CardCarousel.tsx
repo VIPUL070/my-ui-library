@@ -121,7 +121,7 @@ const CardCarousel = () => {
                 }}
               >
                 <div
-                  className="absolute top-8 right-8 z-50 cursor-pointer"
+                  className="absolute top-8 right-8 z-50"
                   onClick={() => setOpen(false)}
                 >
                   <CloseButton />

@@ -1,21 +1,21 @@
 const CloseButton = () => {
   return (
     <div
-      className="w-10 h-10 ric-modal-close-button-wrapper"
+      className="w-10 h-10 ric-modal-close-button-wrapper cursor-pointer"
       data-modal-close-button-wrapper=""
     >
       <button
         aria-label="Close safety section."
-        className="w-full h-full flex items-center justify-center bg-black hover:bg-neutral-800 text-white rounded-full transition-colors ric-modal-close-button"
+        className="w-full h-full flex items-center cursor-pointer justify-center bg-black hover:bg-neutral-800 text-white rounded-full transition-colors ric-modal-close-button"
         data-modal-close-button=""
         data-modal-close=""
       >
         <span 
-          className="w-6 h-6 flex items-center justify-center [&>svg]:w-full [&>svg]:h-full [&>svg]:fill-current ric-modal-close-icon" 
+          className="w-6 h-6 flex items-center justify-center [&>svg]:w-full [&>svg]:h-full [&>svg]:fill-current ric-modal-close-icon cursor-pointer" 
           data-modal-close-icon=""
         >
           <svg
-            className="icon-control icon-control-close"
+            className="icon-control icon-control-close cursor-pointer"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 36 36"
           >
