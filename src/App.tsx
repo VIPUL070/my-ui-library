@@ -4,8 +4,8 @@
 // import Scroll from "./components/Scroll/Scroll"
 // import InterfaceCard from "./components/InterfaceCard/InterfaceCard"
 // import IPhoneScrollGallery from "./components/IPhoneScrollGallery/IPhoneScrollGallery"
-
-import Button from "./components/Button/Button"
+// import Button from "./components/Button/Button"
+import DraggableCard from "./components/DraggableCard/DraggableCard"
 
 function App() {
   return (
@@ -16,7 +16,8 @@ function App() {
    <Scroll />
    <InterfaceCard /> */}
    {/* <IPhoneScrollGallery /> */}
-   <Button />
+   {/* <Button /> */}
+   <DraggableCard />
    </>
   )
 }
