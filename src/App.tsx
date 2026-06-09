@@ -5,7 +5,8 @@
 // import InterfaceCard from "./components/InterfaceCard/InterfaceCard"
 // import IPhoneScrollGallery from "./components/IPhoneScrollGallery/IPhoneScrollGallery"
 // import Button from "./components/Button/Button"
-import DraggableCard from "./components/DraggableCard/DraggableCard"
+// import DraggableCard from "./components/DraggableCard/DraggableCard"
+import GooeySearch from "./components/GooeySearch/GooeySearch"
 
 function App() {
   return (
@@ -17,7 +18,8 @@ function App() {
    <InterfaceCard /> */}
    {/* <IPhoneScrollGallery /> */}
    {/* <Button /> */}
-   <DraggableCard />
+   {/* <DraggableCard /> */}
+   <GooeySearch />
    </>
   )
 }
