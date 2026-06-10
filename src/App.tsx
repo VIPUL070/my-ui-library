@@ -6,7 +6,8 @@
 // import IPhoneScrollGallery from "./components/IPhoneScrollGallery/IPhoneScrollGallery"
 // import Button from "./components/Button/Button"
 // import DraggableCard from "./components/DraggableCard/DraggableCard"
-import GooeySearch from "./components/GooeySearch/GooeySearch"
+// import GooeySearch from "./components/GooeySearch/GooeySearch"
+import TextFlowAnimation from "./components/TextFlowAnimation/TextFlowAnimation"
 
 function App() {
   return (
@@ -19,7 +20,8 @@ function App() {
    {/* <IPhoneScrollGallery /> */}
    {/* <Button /> */}
    {/* <DraggableCard /> */}
-   <GooeySearch />
+   {/* <GooeySearch /> */}
+   <TextFlowAnimation />
    </>
   )
 }
