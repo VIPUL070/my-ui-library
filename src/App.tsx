@@ -7,7 +7,8 @@
 // import Button from "./components/Button/Button"
 // import DraggableCard from "./components/DraggableCard/DraggableCard"
 // import GooeySearch from "./components/GooeySearch/GooeySearch"
-import TextFlowAnimation from "./components/TextFlowAnimation/TextFlowAnimation"
+// import TextFlowAnimation from "./components/TextFlowAnimation/TextFlowAnimation"
+import Isometric from "./components/Isometric/Isometric"
 
 function App() {
   return (
@@ -21,7 +22,8 @@ function App() {
    {/* <Button /> */}
    {/* <DraggableCard /> */}
    {/* <GooeySearch /> */}
-   <TextFlowAnimation />
+   {/* <TextFlowAnimation /> */}
+   <Isometric />
    </>
   )
 }
