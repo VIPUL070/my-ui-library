@@ -7,12 +7,14 @@ interface IsometricBoxProps {
   className?: string;
   variant?: "top" | "left" | "right" | "all";
   isActive?: boolean;
+  size?: string
 }
 
 const IsometricBox = ({
   className = "",
   variant = "all",
   isActive = true,
+  size= "200"
 }: IsometricBoxProps) => {
   const facePath = {
     stroke: STROKE,
@@ -35,56 +37,39 @@ const IsometricBox = ({
     damping: 30,
   };
 
-  const NegativeYAnimate = {
-    animate: {
-      y: -25,
-    },
-    initial: {
-      y: 0,
-    },
-  };
-
-  const NegativeXAnimate = {
-    animate: {
-      x: -25,
-    },
-    initial: {
-      x: 0,
-    },
-  };
-
-  const XAnimate = {
-    animate: {
-      x: 25,
-    },
-    initial: {
-      x: 0,
-    },
-  };
-
-  const NoAnimate = {
-    animate: {
-      x: 0,
-      y: 0,
-    },
-    initial: {
-      x: 0,
-      y: 0,
-    },
-  };
-
-  const getVariants = (face: string) => {
-    if (variant !== "all" && face !== variant) return NoAnimate;
+ const getVariants = (face: string) => {
+    const isCurrentActive = variant === "all" || face === variant;
 
     switch (face) {
       case "top":
-        return NegativeYAnimate;
+        return {
+          initial: { y: 0, stroke: STROKE },
+          animate: { 
+            y: isCurrentActive ? -25 : 0, 
+            stroke: isCurrentActive ? "#840c0c" : STROKE 
+          },
+        };
       case "left":
-        return NegativeXAnimate;
+        return {
+          initial: { x: 0, stroke: STROKE },
+          animate: { 
+            x: isCurrentActive ? -25 : 0, 
+            stroke: isCurrentActive ? "#15845f" : STROKE 
+          },
+        };
       case "right":
-        return XAnimate;
+        return {
+          initial: { x: 0, stroke: STROKE },
+          animate: { 
+            x: isCurrentActive ? 25 : 0, 
+            stroke: isCurrentActive ? "#0a3476" : STROKE 
+          },
+        };
       default:
-        return NoAnimate;
+        return {
+          initial: { x: 0, y: 0, stroke: STROKE },
+          animate: { x: 0, y: 0, stroke: STROKE },
+        };
     }
   };
 
@@ -94,8 +79,8 @@ const IsometricBox = ({
         <motion.svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 400 400"
-          width={200}
-          height={200}
+          width={size}
+          height={size}
           className="cursor-pointer"
           fill="transparent"
         >
@@ -103,7 +88,7 @@ const IsometricBox = ({
             variants={getVariants("left")}
             transition={TRANSITION}
             {...facePath}
-            fill="#f2f7f7"
+            fill="#1f1f1f"
             d="M 78 132 C 78 128, 82 124, 86 126 L 196 178 C 200 180, 200 184, 200 188 L 200 308 C 200 313, 196 316, 191 314 L 84 270 C 80 268, 78 264, 78 260 Z"
           />
           <motion.path
